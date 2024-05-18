@@ -1,0 +1,489 @@
+@media only screen and (min-width: 750px) {
+
+html {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  width: 100%;
+  font-size: 15px;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/* Desktop Header Formatting */
+header {
+  display: flex;
+  height: auto;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+header #dates {
+  font-size: 65px;
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 40px;
+  text-align: left;
+}
+
+header #heading-wrapper {
+  text-align: left;
+  width: 100%;
+}
+
+header nav {
+  text-align: left;
+}
+
+header nav ul {
+  display: flex;
+  width: 70%;
+}
+
+nav ul li a.nav-link {
+  font-size: 20px;
+}
+
+header nav ul li {
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header nav ul li a.nav-link.active, header nav ul li a.nav-link:hover {
+  border-width: 5px;
+}
+
+.heading-text {
+  font-size: 40px;
+}
+
+header img {
+  margin: 10px;
+  width: 225px;
+  height: 100%;
+}
+
+nav #volunteer, #map, .button {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.image_wrapper {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image_wrapper img {
+  border-radius: 5px;
+  width: 90%;
+  max-width: 775px;
+  display: block;
+  margin: auto;
+  float: left;
+}
+
+/* Desktop Index Page Style */
+
+.main {
+  display: flex;
+  margin: auto;
+  margin-top: 45px;
+}
+
+.main nav {
+  width: 100%;
+}
+
+.main nav ul {
+  display: flex;
+}
+
+.main nav ul li {
+  margin: auto;
+  float: left;
+}
+
+#home_li {
+  margin-left: 0px;
+}
+
+.details-sidebar {
+  margin-left: auto;
+  margin-right: 50px;
+  width: 15%;
+  justify-content: center;
+  height: auto;
+}
+
+.details-sidebar-wrapper {
+  width: 150px;
+  padding: 15%;
+  text-align: center;
+}
+
+.details-sidebar h1 {
+  margin: auto;
+}
+
+.details-sidebar p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.details-sidebar .body-text {
+  font-size: 15px;
+  margin-top: 0px;
+}
+
+#map_btn_wrapper {
+  margin: auto;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+#map {
+  margin: auto;
+}
+
+.details-main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-main {
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding: 40px;
+  width: 60%;
+  justify-content: center;
+}
+
+.details-main h1, .details h1 {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.details-main p {
+  margin: auto;
+  font-size: 20px;
+}
+
+.details-main #intro {
+  flex:1;
+  float: left;
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.details-main #intro p {
+  margin-left: 2.5%;
+}
+
+#intro_section_1, #intro_section_2 {
+  flex: 1;
+}
+
+#intro_section_2 {
+  padding-left: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+#intro_section_2 img {
+  margin: 5%;
+  max-height: 500px;
+}
+
+.details-main #intro_text_2 {
+  width: 100%;
+}
+
+#icon_wrapper {
+  display: flex;
+  margin-top: 25px;
+}
+
+#icon_wrapper img {
+  width: 75px;
+}
+
+#icon_wrapper .icon {
+  flex: 1;
+  text-align: center;
+}
+
+.details {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
+  width: 70%;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.details h2 {
+  text-align: center;
+}
+
+.details h3 {
+  text-align: center;
+  font-size: 40px;
+}
+
+/* Desktop About Page Structure */
+#about_heading {
+  display: flex;
+}
+
+.details-main #about_heading #about-img {
+  flex: 3;
+}
+
+#quick-links {
+  flex: 2;
+  text-align: left;
+}
+
+#quick-links ul li {
+  font-size: 20px;
+}
+
+.details-main h3 {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.details-main h3#performance {
+  margin-top: 40px;
+}
+
+.details-main .body-text {
+  margin-left: 40px;
+}
+
+.details-main .performance_time {
+  font-family: 'Sriracha'
+}
+
+.details-main h4 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+#overview {
+  margin-bottom: 5%;
+}
+
+#map_img_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#map_img {
+  width: 100%;
+  height: auto;
+}
+
+#performance_schedule, #overview {
+  margin: auto;
+  width: 90%;
+  margin-bottom: 5%;
+}
+
+.festival_img {
+  display: flex;
+  justify-content: center;
+}
+
+.details-main-wrapper p.caption {
+  margin: 5%;
+  padding-bottom: 5%;
+  max-width: 775px;
+}
+
+/* Desktop Kids Page Structure */
+
+.family_fun_img {
+  display: flex;
+  justify-content: center;
+}
+
+.family_fun_img img {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.details .body-text {
+  margin-left: 40px;
+}
+
+.details .activity_time {
+  font-family: 'Sriracha'
+}
+
+.details h4 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+#kids_schedule {
+  margin: auto;
+  width: 90%;
+}
+/* Desktop Application Page Structure */
+
+#application_wrapper1, #application_wrapper2 {
+  width: 45%;
+  justify-content: center;
+}
+
+#application_wrapper1 {
+  float: left;
+}
+
+#application_wrapper2 {
+  float: right;
+}
+
+#applications {
+  width: 90%;
+  margin: auto;
+}
+.application {
+  display: flex;
+  align-self: center;
+}
+
+.application img {
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: 20px;
+}
+
+.application h3 {
+  margin: auto;
+  display: block;
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+.application a {
+  display: block;
+  margin: auto;
+}
+
+.application a h4 {
+  margin: auto;
+  padding: 0px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 5px;
+  display: block;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.application a h4:hover {
+  background-color: #FF9800
+}
+
+p {
+  margin: 5%;
+}
+
+/* Desktop Contact Style */
+
+.details .contact {
+  flex: 2;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact_wrapper {
+  justify-content: center;
+  display: flex;
+}
+
+#contact_header {
+  margin-bottom: 0px;
+}
+
+#address_info h2 {
+  margin-top: 0px;
+}
+
+#contact_info h2, #address_info h2 {
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+#address_info {
+  text-align: center;
+}
+
+iframe {
+  flex: 3;
+  width: 600px;
+  height: 450px;
+  border: none;
+  margin: 5%;
+}
+
+.details .contact #contact_info, .details .contact #address_info{
+  margin: auto;
+  margin-top: 0px;
+  width: 90%;
+}
+
+.details .contact .heading-text {
+  text-align: left;
+}
+
+
+
+
+/* Desktop Footer Structure */
+
+footer {
+  width: 100%;
+}
+
+footer nav ul {
+  margin: auto;
+  display: flex;
+  width: 70%;
+}
+
+footer nav ul li {
+  margin: auto;
+  display: block;
+  float: left;
+}
+
+.footer_wrapper {
+  padding: 25px;
+  justify-content: center;
+}
+}

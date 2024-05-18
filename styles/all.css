@@ -1,0 +1,684 @@
+@font-face {
+    font-family: 'Raleway'; /*a name to be used later*/
+    src: url('./fonts/Raleway/Raleway-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Raleway-Bold'; /*a name to be used later*/
+    src: url('./fonts/Raleway/Raleway-SemiBold.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Julius_Sans_One'; /*a name to be used later*/
+    src: url('./fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Lobster'; /*a name to be used later*/
+    src: url('./fonts/Lobster/Lobster-Regular.ttf'); /*URL to font*/
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  font-family: 'Raleway';
+  background-image: url('../images/background.jpeg');
+  background-position: center;
+  background-size: contain;
+}
+
+header {
+  width: 280px;
+  background-color: #eaedf2;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h1, h2 {
+  margin: 0px;
+}
+
+section {
+  display: block;
+  padding-left: 320px;
+  background-color: white;
+}
+
+.section_title {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-size: 60px;
+  color: #1a2d4c;
+  padding: 15px 20px 20px 30px;
+}
+
+/* Nav Section */
+.img_wrapper {
+  display: flex;
+  justify-content: center;
+  height: 33%;
+}
+
+#me {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  align-self: center;
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-top: 0px;
+  font-family: 'Lobster';
+  font-size: 40px;
+  color: #1a2d4c;
+  height: 6%;
+}
+
+nav {
+  height: 36%;
+}
+
+.nav {
+  list-style: none;
+  margin: 30px;
+  padding: 0px;
+  font-family: 'Julius_Sans_One';
+}
+
+.nav-item {
+  padding: 15px 0 15px 0;
+  border-bottom: solid 1px grey;
+}
+
+#projects_item {
+  border: 0px;
+}
+
+.nav span {
+  display: none;
+}
+
+.nav .active span {
+  margin-right: 5px;
+  display: inline;
+}
+
+p#note {
+  font-size: 12px;
+  font-style: italic;
+  color: grey;
+  height: 5%;
+  text-align: center;
+  display: block;
+}
+
+#email {
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  color: #1a2d4c;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+#email:hover {
+  text-decoration: underline;
+}
+
+#email a {
+  align-self: center;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  height: 10%;
+}
+
+#facebook, #linkedin, #bitbucket {
+  width: 35px;
+  height: 35px;
+  margin: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Home Section */
+
+#home {
+  padding: 30px;
+  padding-left: 310px;
+  background-image: url('../images/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: left;
+}
+
+#home h1 {
+  font-family: 'Julius_Sans_One';
+  font-size: 45px;
+  color: black;
+}
+
+#slideshow {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+#slideshow .button_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#left, #right {
+  height: 50px;
+  width: 50px;
+  align-self: center;
+  cursor: pointer;
+}
+
+#current_img {
+  width: 80%;
+  max-width: 750px;
+  height: 80%;
+  margin: 5%;
+}
+
+#education {
+  display: flex;
+  margin-left: 20px;
+}
+
+#education img {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+}
+
+#education h2 {
+  margin: 0px;
+  font-family: 'Julius_Sans_One';
+}
+
+#education h3 {
+  margin: 5px 0px 5px 0px;
+  font-weight: lighter;
+}
+
+#education p {
+  padding: 8px 12px 8px 12px;
+  margin-top: 5px;
+  display: inline-block;
+  background-color: #d5dcef;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#education p:hover {
+  background-color: #b8c1db;
+}
+
+#education_text {
+  margin-left: 15px;
+  align-self: center;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 30px;
+  padding-top: 18px;
+  border: 1px solid #888;
+}
+
+.modal-content .section_title {
+  padding: 0 0 15px 10px;
+}
+
+.modal-content th {
+  font-family: 'Julius_Sans_One';
+  padding: 5px 10px 5px 10px;
+  text-align: left;
+  background-color: #eaedf2;
+}
+
+.modal-content td {
+  padding: 5px 10px 0 10px;
+}
+
+#courses_filter {
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+small {
+  display: block;
+  margin: 15px 0 0 10px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#header {
+  margin: 30px;
+  margin-top: 0px;
+}
+
+/* About Section */
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 25px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.cell_row {
+  display: flex;
+}
+
+.cell_row h1 {
+  align-self: center;
+  margin-left: 15px;
+  font-style: normal;
+  font-family: 'Julius_Sans_One';
+  display: block;
+}
+
+.cell_row.heading {
+  padding-bottom: 10px;
+}
+
+.cell_row .column {
+  width: 50%;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.border_bottom {
+  border-bottom: solid 1px #e8edf4;
+}
+
+.border_right {
+  border-right: solid 1px #e8edf4;
+}
+
+.cell ul {
+  padding-left: 20px;
+}
+
+img.school_icon {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+  margin-top: 16px;
+}
+
+.school_text {
+  font-size: 13px;
+}
+
+.cell p {
+  margin-bottom: 0px;
+}
+
+.interest {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /*justify-content: center;*/
+  text-align: center;
+}
+
+.interest img {
+  width: 50px;
+  height: 50px;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.interest p {
+  font-size: 14px;
+}
+
+#summary {
+  font-size: 20px;
+}
+
+ul#scholarships {
+  list-style: none;
+}
+
+#scholarships li {
+  margin-top: 10px;
+}
+
+#scholarships a:hover {
+  color: grey;
+}
+
+img.check {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  align-self: center;
+}
+
+.cell_row .skill {
+  align-self: center;
+  margin: 0px;
+}
+
+.body {
+  margin-top: 20px;
+}
+
+/* Professional Experience */
+#experience {
+  /*background-color: #F9FAFD;*/
+}
+
+#experience h3 {
+  font-family: 'Julius_Sans_One';
+  font-size: 30px;
+  font-weight: bold;
+  color: #1a2d4c;
+  margin: 25px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.experiences {
+  display: flex;;
+}
+
+.experience {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  width: 295px;
+  /*height: 295px;*/
+  /*border: solid 2px #e8edf4;*/
+  /*border-radius: 160px;*/
+  text-align: center;
+  background-color: white;
+}
+
+.experience_text, .campus_text {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  align-self: center;
+  font-size: 18px;
+}
+
+.experience_text p, .campus_text p {
+  margin: 5px;
+}
+
+.experience img {
+  /*max-width: 200px;*/
+  /*max-height: 98px;*/
+  height: auto;
+  width: 50%;
+  margin: 0px 20px 5px 20px;
+  align-self: center;
+}
+
+.experience_text .company_info {
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  border-bottom: solid 2px #e8edf4;
+}
+
+#karaoke {
+  margin-top: 15px;
+}
+
+#nmb {
+  height: 101px;
+  width: 200px;
+}
+
+#tsl {
+  width: 200px;
+  height: 98px;
+}
+
+.experience img.itwomen {
+  width: 175px;
+  height: 80px;
+}
+
+#tutor {
+  height: 80px;
+  width: auto;
+}
+
+.experience a {
+  align-self: center;
+  /*padding: 10px 15px 10px 15px;
+  color: #99B1D2;*/
+  cursor: pointer;
+  padding: 8px 12px 8px 12px;
+  margin-top: 5px;
+  display: inline-block;
+  background-color: #d5dcef;
+}
+
+.experience a:hover {
+  background-color: #b8c1db;
+}
+
+#teaching .experience {
+  height: 225px;
+  width: 225px;
+  padding-top: 0px;
+  /*border-radius: 165px;*/
+}
+
+/* On Campus Section */
+#campus {
+  /*background-color: #F9FAFD;*/
+}
+
+#scioly img {
+  width: 150px;
+  height: 138px;
+  align-self: center;
+}
+
+#auv img {
+  width: 130px;
+  height: 130px;
+  align-self: center;
+}
+
+#scioly b, #auv b {
+  font-size: 25px;
+}
+
+#scioly p, #auv p {
+  margin-bottom: 0px;
+}
+
+.date {
+  font-size: 14px;
+  font-family: 'Julius_Sans_One';
+  font-weight: bold;
+  color: grey;
+  margin-top: 8px;
+}
+
+.campus_text {
+  align-self: center;
+}
+
+.campus_description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#campus h2 {
+  font-family: 'Julius_Sans_One';
+  font-size: 30px;
+  font-weight: bold;
+  color: #1a2d4c;
+  margin-left: 30px;
+}
+
+.club, #memberships .cell_row {
+  flex: 1;
+  display: flex;
+}
+
+.club img {
+  max-width: 100px;
+  max-height: 50px;
+  margin-right: 20px;
+  align-self: center;
+}
+
+.club a:hover {
+  color: grey;
+}
+
+#memberships .club {
+  padding: 30px;
+}
+
+#memberships p {
+  align-self: center;
+  font-size: 18px;
+}
+
+/* Projects Section */
+#filter {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  margin-left: 5px;
+}
+
+input {
+  border: solid 1px grey;
+  border-radius: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 37.5%;
+}
+
+.auv_column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.project, .auv_project {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.website_project {
+  height: 100%;
+  width: 100%;
+}
+
+.auv_project img {
+  width: 100%;
+  height: 100%;
+}
+
+.project_description {
+  text-align: center;
+  padding: 15px;
+}
+
+.project_description p {
+  margin: 0px;
+}
+
+p.project_title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}

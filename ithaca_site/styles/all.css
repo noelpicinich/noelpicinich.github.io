@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Sriracha'; /*a name to be used later*/
+    src: url('./fonts/Sriracha/Sriracha-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Cabin_Sketch'; /*a name to be used later*/
+    src: url('./fonts/Cabin_Sketch/CabinSketch-Bold.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Kanit'; /*a name to be used later*/
+    src: url('./fonts/Kanit/Kanit-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Kanit_Thin'; /*a name to be used later*/
+    src: url('./fonts/Kanit/Kanit-Thin.ttf'); /*URL to font*/
+}
+
+/* General Body Style */
+
+body {
+  font-family: 'Kanit';
+  color: #6D1404;
+  background-image: url('../images/apples.jpeg');
+}
+
+a {
+  text-decoration: none;
+  color: #6D1404;
+}
+
+.body-text {
+  font-family: 'Kanit';
+  color: #6D1404;
+}
+
+/* General Header Style */
+
+header {
+  background-color: white;
+}
+
+header #dates {
+  font-family: 'Cabin_Sketch';
+  color: #FF4B39;
+}
+
+header nav {
+  text-align: left;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+nav ul li a.nav-link {
+  font-family: 'Sriracha';
+}
+
+header nav ul li a.nav-link.active, header nav ul li a.nav-link:hover {
+  border-bottom: solid #FF9800;
+}
+
+.heading-text {
+  font-family: 'Cabin_Sketch';
+  color: #FF4B39;
+}
+
+/* General Index Page Style */
+
+.main nav ul {
+  list-style: none;
+}
+
+.details-sidebar-wrapper {
+  border-radius: 5px;
+  background-color: white;
+}
+
+.details-sidebar p {
+  font-family: 'Sriracha';
+  color: #6D1404;
+}
+
+.details-main {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.details-main h1, .details h1 {
+  font-family: 'Sriracha';
+}
+
+.details-main #festival1 {
+  border-radius: 5px;
+}
+
+.image_wrapper img {
+  border-radius: 5px;
+}
+
+#icon_wrapper .icon {
+  color: #6D1404;
+}
+
+#icon_wrapper .icon h2 {
+  font-family: 'Sriracha';
+}
+
+.details {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.details h2, .details h3 {
+  font-family: 'Cabin_Sketch';
+  color: #FF4B39;
+}
+
+.here:hover {
+  color: #BF887E;
+}
+
+/* General About Page Style */
+
+#quick-links ul {
+  list-style: none;
+}
+
+#quick-links ul li {
+  font-family: 'Sriracha';
+}
+
+#quick-links ul li a:hover {
+  color: #BF887E;
+}
+
+.details-main h3 {
+  font-family: 'Cabin_Sketch';
+  color: #FF4B39;
+}
+
+.details-main .body-text {
+  font-family: 'Kanit';
+  color: #6D1404;
+}
+
+.performance_time {
+  font-family: 'Sriracha'
+}
+
+.festival_img img {
+  border-radius: 5px;
+}
+
+/* General Volunteer Page Style */
+
+.details .body-text {
+  font-family: 'Kanit';
+  color: #6D1404;
+}
+
+.activity_time {
+  font-family: 'Sriracha'
+}
+
+/* General Application Page Style */
+
+.application h3 {
+  font-family: 'Sriracha';
+  color: #6D1404;
+}
+
+.application a h4, nav #volunteer, #map {
+  font-family: 'Kanit_Thin';
+  background-color: #FFA900;
+  border-radius: 5px;
+  color: white;
+}
+
+.application a h4:hover, nav #volunteer:hover, #map:hover {
+  background-color: #FF9800
+}
+
+/* General Contact Style */
+
+/* General Footer Style */
+
+footer {
+  background-color: rgb(255, 195, 106);
+}
+
+footer nav ul {
+  list-style: none;
+}
+
+footer a:hover {
+  color: #FF9800;
+}

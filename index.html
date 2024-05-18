@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Noel Picinich</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!-- <script src="scripts/jquery-3.3.1.min.js" type="text/javascript"></script> -->
+  <script src="scripts/header.js" type="text/javascript"></script>
+  <script src="scripts/slideshow.js" type="text/javascript"></script>
+  <script src="scripts/projects.js" type="text/javascript"></script>
+  <script src="scripts/scroll.js" type="text/javascript"></script>
+  <script src="scripts/modal.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="styles/all.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="img_wrapper">
+      <img id="me" src="images/me.png" alt="Photo of me">
+    </div>
+    <h1>Noel Picinich</h1>
+    <nav>
+      <ul class="nav">
+        <li id="home_item" class="nav-item active"><a href="index.html#home"><span>></span>Home</a></li>
+        <li id="about_item" class="nav-item"><a href="index.html#about"><span>></span>About</a></li>
+        <li id="experience_item" class="nav-item"><a href="index.html#experience"><span>></span>Professional Experience</a></li>
+        <li id="campus_item" class="nav-item"><a href="index.html#campus"><span>></span>On Campus</a></li>
+        <li id="projects_item" class="nav-item"><a href="index.html#projects"><span>></span>Projects</a></li>
+      </ul>
+    </nav>
+    <div id="email">
+      <a target="_blank" href="mailto:nmp53@cornell.edu">nmp53@cornell.edu</a>
+    </div>
+    <div id="icons">
+      <!-- Source of github.png, mail.png, facebook.png: Icons8 (https://icons8.com) -->
+      <a class="media" target="_blank" href="https://www.facebook.com/noel.picinich.9"><img id="facebook" src="./images/facebook.png" alt="Facebook"/></a>
+      <a class="media" target="_blank" href="https://www.linkedin.com/in/noel-picinich-4a9972121/"><img id="linkedin" src="./images/linkedin.png" alt="LinkedIn"/></a>
+      <a class="media" target="_blank" href="https://bitbucket.org/noelmpicinich/"><img id="bitbucket" src="./images/bitbucket.png" alt="Bitbucket"/></a>
+    </div>
+    <p id="note">noelpicinich.com was developed from scratch using HTML, CSS, and jQuery</p>
+  </header>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span id="exit" class="close">&times;</span>
+    <h1 class="section_title">Courses</h1>
+    <p id="courses_filter">Filter CS courses</p>
+    <table>
+      <tr>
+        <th>Course</th>
+        <th>Description</th>
+        <th>Term</th>
+        <th>Credit Hours</th>
+      </tr>
+      <tr class="not_cs">
+        <td>ARTH 1156</td>
+        <td>Visual History of Women Reading</td>
+        <td>Fall 2016</td>
+        <td>3</td>
+      </tr>
+      <tr class="not_cs">
+        <td>CHEM 2090</td>
+        <td>Engineering General Chemistry</td>
+        <td>Fall 2016</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>CS 1110</td>
+        <td>Intro to Computing Using Python</td>
+        <td>Fall 2016</td>
+        <td>4</td>
+      </tr>
+      <tr class="not_cs">
+        <td>MATH 1920</td>
+        <td>Multivariable Calculus for Engineers</td>
+        <td>Fall 2016</td>
+        <td>3</td>
+      </tr>
+      <tr class="not_cs">
+        <td>AMST 2655</td>
+        <td>Latinos in the USA</td>
+        <td>Spring 2017</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>CS 2043</td>
+        <td>UNIX Tools and Scripting</td>
+        <td>Spring 2017</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>CS 2110</td>
+        <td>Object Oriented Programming and Data Structures</td>
+        <td>Spring 2017</td>
+        <td>3</td>
+      </tr>
+      <tr class="not_cs">
+        <td>Math 2940</td>
+        <td>Linear Algebra for Engineers</td>
+        <td>Spring 2017</td>
+        <td>4</td>
+      </tr>
+      <tr class="not_cs">
+        <td>PHYS 1112</td>
+        <td>Physics 1: Mechanics and Heat</td>
+        <td>Spring 2017</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>CS 1300</td>
+        <td>Intro to Web Development</td>
+        <td>Fall 2017</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>CS 1620</td>
+        <td>Visual Imaging in an Electronic Age</td>
+        <td>Fall 2017</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>CS 2800</td>
+        <td>Discrete Structures</td>
+        <td>Fall 2017</td>
+        <td>3</td>
+      </tr>
+      <tr class="not_cs">
+        <td>PHYS 2213</td>
+        <td>Physics 2: Electricity and Magnetism</td>
+        <td>Fall 2017</td>
+        <td>4</td>
+      </tr>
+      <tr class="not_cs">
+        <td>MATH 2930*</td>
+        <td>Differential Equations for Engineers</td>
+        <td>Spring 2018</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>CS 2300*</td>
+        <td>Intermediate Design & Programming for the Web</td>
+        <td>Spring 2018</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>CS 3110*</td>
+        <td>Data Structures & Functional Programming</td>
+        <td>Spring 2018</td>
+        <td>4</td>
+      </tr>
+      <tr class="not_cs">
+        <td>BTRY 3080*</td>
+        <td>Probability Models & Inference</td>
+        <td>Spring 2018</td>
+        <td>4</td>
+      </tr>
+    </table>
+    <small>*In progress until May 2018</small>
+  </div>
+
+</div>
+  <section id="home">
+    <div id="header">
+      <h1>Developer. <br/>Designer. <br/>Life-long Learner.</h1>
+    </div>
+    <div id="education">
+      <div>
+        <!-- IMG Source: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwishO6OuYnWAhUH3IMKHTC6CSwQjRwIBw&url=https%3A%2F%2Fwww.atkinson.cornell.edu%2Fabout%2Facsf-identity.html&psig=AFQjCNFoc2jMtjCEzJJWyGD8AiW1F9_3yA&ust=1504542871198724 -->
+        <img src="images/cornell.png" alt="Cornell University logo"/>
+      </div>
+      <div id="education_text">
+        <h2>Cornell University</h2>
+        <h3>Computer Science 2020</h3>
+        <div>
+          <p id="courses_btn" class="button">See Courses</p>
+        </div>
+      </div>
+    </div>
+    <div id="slideshow">
+      <div class="button_wrapper">
+        <img id="left" src="images/left.png" alt="Left Arrow">
+      </div>
+      <img id="current_img" src="images/gallery/slide1.jpg" alt="Photos of me and my activities">
+      <div class="button_wrapper">
+        <img id="right" src="images/right.png" alt="Right Arrow">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h1 class="section_title">About</h1>
+    <div class="rows">
+      <div class="row">
+        <div class="cell border_bottom border_right">
+          <div class="heading cell_row">
+            <img src="images/profile.png" alt="Profile Icon">
+            <h1>Summary</h1>
+          </div>
+          <p id="summary">Turning my love for problem-solving, philanthropy, and art into a lifelong
+            pursuit of developing elegant, impactful software solutions while continuously
+            expanding and sharing my skills.</p>
+        </div>
+        <div class="cell border_bottom border_right">
+          <div class="heading cell_row">
+            <img src="images/education.png" alt="Education Icon">
+            <h1>Education</h1>
+          </div>
+          <div class="cell_row">
+            <img class="school_icon" src="images/cornell.png" alt="Cornell Logo">
+            <p><b>Cornell University</b><br/><span class="school_text"><i>B.S. in Computer Science</i><br/>
+            GPA: 3.53, Dean's List Spring '17, Fall '17</span></p>
+          </div>
+          <div class="cell_row">
+            <img class="school_icon" src="images/fau.png" alt="FAU Logo">
+            <p><b>Florida Atlantic University</b><br/><span class="school_text"><i>Dual Enrollment Student</i><br/>
+            GPA: 4.00</span></p>
+          </div>
+          <div class="cell_row">
+            <img class="school_icon" src="images/bobcats.png" alt="Boca High Logo">
+            <p><b>Boca Raton High School</b><br/><span class="school_text"><i>Science Olympiad Competitor</i><br/>
+            GPA: 3.98 (U.W.), 5.03 (W.)</span></p>
+          </div>
+        </div>
+        <div class="cell border_bottom">
+          <div class="heading cell_row">
+            <img src="images/skills.png" alt="Skills Icon">
+            <h1>Skills</h1>
+          </div>
+          <div class="cell_row body">
+            <img class="check" src="images/check.png" alt="checkmark">
+            <p class="skill">Web Development</p>
+          </div>
+          <div class="cell_row">
+            <img class="check" src="images/check.png" alt="checkmark">
+            <p class="skill">Design</p>
+          </div>
+          <div class="cell_row">
+            <img class="check" src="images/check.png" alt="checkmark">
+            <p class="skill">Leadership</p>
+          </div>
+          <div class="cell_row">
+            <img class="check" src="images/check.png" alt="checkmark">
+            <p class="skill">Problem Solving</p>
+          </div>
+          <div class="cell_row">
+            <img class="check" src="images/check.png" alt="checkmark">
+            <p class="skill">Organization</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell border_right">
+          <div class="heading cell_row">
+            <img src="images/code.png" alt="Code Icon">
+            <h1>Programming</h1>
+          </div>
+          <div class="cell_row space_around">
+            <div class="column">
+              <h3>Languages</h3>
+              <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>PHP</li>
+                <li>JSX</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h3>Libraries</h3>
+              <ul>
+                <li>React</li>
+                <li>JQuery</li>
+                <li>Django</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="cell border_right">
+          <div class="heading cell_row">
+            <img src="images/interests.png" alt="Star Icon">
+            <h1>Interests</h1>
+          </div>
+          <div class="cell_row">
+            <div class="interest">
+              <img src="images/teaching.png" alt="teaching icon">
+              <p>Teaching STEM</p>
+            </div>
+            <div class="interest">
+              <img src="images/coding.png" alt="coding icon">
+              <p>Coding</p>
+            </div>
+            <div class="interest">
+              <img src="images/philanthropy.png" alt="philanthropy icon">
+              <p>Philanthropy</p>
+            </div>
+          </div>
+          <div class="cell_row">
+            <div class="interest">
+              <img src="images/art.png" alt="art icon">
+              <p>Art</p>
+            </div>
+            <div class="interest">
+              <img src="images/outdoors.png" alt="outdoors icon">
+              <p>Outdoors</p>
+            </div>
+            <div class="interest">
+              <img src="images/dog.png" alt="dog icon">
+              <p>Pets</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="heading cell_row">
+            <img src="images/sponsors.png" alt="Sponsors Icon">
+            <h1>Sponsors</h1>
+          </div>
+          <ul id="scholarships">
+            <li><a href="http://www.edwardtbedfordfoundation.org/" target="_blank">Edward T. Bedford Foundation</a></li>
+            <li><a href="https://itwomen.org/" target="_blank">ITWomen Scholarship</a></li>
+            <li><a href="http://www.scholarship.org/" target="_blank">George Snow Scholarship Fund</a></li>
+            <li><a href="http://www.jmrf.org/" target="_blank">Jan M. Rubin Foundation</a></li>
+            <li><a href="http://www.palmbeachpost.com/pathfinder/" target="_blank">Palm Beach Post Pathfinder Award</a></li>
+            <li><a href="http://societyofwomenengineers.swe.org/" target="_blank">Society of Women Engineers</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="experience">
+    <h1 class="section_title">Professional Experience</h1>
+    <h3>Full-Stack Development</h3>
+    <div class="experiences">
+      <div class="experience border_right">
+        <img id="tsl" class="company" src="images/tsl.png" alt="The SilverLogic Logo">
+        <div class="experience_text">
+          <p class="company_info"><b>The SilverLogic</b> | Boca Raton, FL</p>
+          <p><i>Software Engineering Intern</i><br/>
+            <span class="date">June 2017 - August 2017</span></p>
+        </div>
+        <a href="index.html#projects">See Project</a>
+      </div>
+      <div class="experience border_right">
+        <img id="nmb" class="company" src="images/nmb.png" alt="NMB Media Logo">
+        <div class="experience_text">
+          <p class="company_info"><b>NMB Media</b> | Fort Lauderdale, FL</p>
+          <p><i>Freelance Web Development</i><br/>
+            <span class="date">June 2017 - August 2017</span></p>
+        </div>
+        <a href="index.html#projects">See Project</a>
+      </div>
+      <div class="experience">
+        <img id="karaoke" class="company" src="images/khouse.png" alt="khouse logo">
+        <div class="experience_text">
+          <p class="company_info"><b>K-House Karaoke</b> | Ithaca, NY</p>
+          <p><i>Freelance Web Development</i><br/>
+            <span class="date">November 2017 - December 2017</span></p>
+        </div>
+        <a href="index.html#projects">See Project</a>
+      </div>
+    </div>
+    <h3>Teaching</h3>
+    <div id="teaching" class="experiences">
+      <div class="experience border_right">
+        <img class="itwomen company" src="images/itwomen.gif" alt="ITWomen Logo">
+        <div class="experience_text">
+          <p class="company_info"><b>ITWomen</b> | Fort Lauderdale, FL</p>
+          <p><i>Girls Coding Camp Instructor</i><br/>
+            <span class="date">June 2017</span></p>
+        </div>
+      </div>
+      <div class="experience border_right">
+        <img class="itwomen company" src="images/itwomen.gif" alt="ITWomen Logo">
+        <div class="experience_text">
+          <p class="company_info"><b>ITWomen</b> | Fort Lauderdale, FL</p>
+          <p><i>Girls Coding Camp Counselor</i><br/>
+            <span class="date">June 2016</span></p>
+        </div>
+      </div>
+      <div class="experience">
+        <img id="tutor" class="company" src="images/bobcats.png" alt="Boca High Logo">
+        <div class="experience_text">
+          <p class="company_info"><b>Boca High</b> | Boca Raton, FL</p>
+          <p><i>Math and Science Tutor</i><br/>
+            <span class="date">August 2014 - May 2016</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="campus">
+    <h1 class="section_title">On Campus</h1>
+    <div class="rows">
+      <div class="row">
+        <div id="scioly" class="cell">
+          <div class="cell_row">
+            <img src="images/scioly.png" alt="Science Olympiad at Cornell Logo">
+            <div class="campus_text">
+              <p><b>Science Olympiad at Cornell</b></p>
+              <p><i>Build Events Director</i><br/>
+                <span class="date">August 2016 - Present</span></p>
+            </div>
+          </div>
+          <div class="campus_description">
+            <p>Science Olympiad was one of my most impactful high school experiences.
+              I joined the Science Olympiad at Cornell club to give back to the organization
+              and work to inspire young competitors to pursue STEM careers just
+              as I was inspired. Throughout my involvement I have:</p>
+            <ul>
+              <li>Optimizing the new Cornell scoring software, Ezra, that is used at tournaments across the country</li>
+              <li>Organized and ran engineering-oriented events at Cornell’s Division C Science Olympiad Invitational</li>
+              <li>Volunteered at numerous tournaments in upstate New York to help implement Ezra</li>
+              <li>Maintained and improved cornellscioly.com</li>
+            </ul>
+        </div>
+        </div>
+        <div id="auv" class="cell">
+          <div class="cell_row">
+            <img src="images/cuauv.png" alt="CUAUV Logo">
+            <div class="campus_text">
+              <p><b>Cornell University Autonomous Underwater Vehicle Project Team</b></p>
+              <p><i>Software Member</i><br/>
+                <span class="date">September 2016 - Present</span></p>
+            </div>
+          </div>
+          <div class="campus_description">
+            <p>CUAUV designs, builds, programs and tests a completely new autonomous
+              submarine every year to compete in AUVSI’s international RoboSub competition.
+              As a software subteam member, I recieve invaluable engineering experience
+              through my work:</p>
+            <ul>
+              <li>Writing high-level Python code for the submarine to complete various tasks in an underwater arena</li>
+              <li>Refining the team’s software stack through semesterly projects related to missions, vision, control, and navigation</li>
+            </ul>
+        </div>
+      </div>
+      </div>
+      <h2>Memberships</h2>
+      <div id="memberships" class="row">
+        <div class="cell_row">
+          <div class="club border_right">
+            <img src="images/acsu.png" alt="Association of Computer Science Undergraduates">
+            <a href="http://acsu.cornell.edu/"><p>Association of Computer Science Undergraduates</p></a>
+          </div>
+          <div class="club border_right">
+            <img src="images/wicc.png" alt="Women in Computing at Cornell logo">
+            <a href="https://wicc.acm.org/index.html"><p>Women in Computing at Cornell</p></a>
+          </div>
+          <div class="club">
+            <img src="images/SWE.png" alt="Society of Women Engineers logo">
+            <a href="http://swe.cornell.edu/"><p>Society of Women Engineers</p></a>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h1 class="section_title">Projects</h1>
+    <p id="filter">Filter Projects:
+      <span><input type="checkbox" id="2016"/><label for="2016">2016</label></span>
+      <span><input type="checkbox" id="2017"/><label for="2017">2017</label></span>
+      <span><input type="checkbox" id="web"/><label for="web">HTML, CSS</label></span>
+      <span><input type="checkbox" id="js"/><label for="js">JavaScript</label></span>
+      <span><input type="checkbox" id="php"/><label for="php">PHP</label></span>
+      <span><input type="checkbox" id="python"/><label for="python">Python</label></span>
+      <span><input type="checkbox" id="jquery"/><label for="jquery">jQuery</label></span>
+      <span><input type="checkbox" id="react"/><label for="react">React</label></span>
+    </p>
+    <div class="row">
+      <div class="column">
+        <div id="nmb_site" class="project">
+          <a href="http://www.nmbdigital.com/" target="_blank">
+            <img class="website_project" src="images/nmb_site.jpg" alt="NMB Website Image">
+          </a>
+          <div class="project_description">
+            <p class="project_title">NMB Media website</p>
+            <p class="date">2017</p>
+          </div>
+        </div>
+        <div id="khouse_site" class="project">
+          <a href="#" target="_blank">
+            <img class="website_project" src="images/khouse_site.jpg" alt="K-House Website Image">
+          </a>
+          <div class="project_description">
+            <p class="project_title">K-House Karaoke website</p>
+            <p class="date">2017</p>
+          </div>
+        </div>
+        <div id="my_site_2" class="project">
+          <a href="old_site/index.html" target="_blank">
+            <img class="website_project" src="images/my_site_2.jpg" alt="noelpicinich.com Image">
+          </a>
+          <div class="project_description">
+            <p class="project_title">Portfolio website v.2.</p>
+            <p class="date">2017</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div id="my_site" class="project">
+          <a href="old_site/index.html" target="_blank">
+            <img class="website_project" src="images/my_site.png" alt="noelpicinich.com Image">
+          </a>
+          <div class="project_description">
+            <p class="project_title">Portfolio website v.1.</p>
+            <p class="date">2017</p>
+          </div>
+        </div>
+        <div id="ithaca_site" class="project">
+          <a href="ithaca_site/index.html" target="_blank">
+            <img class="website_project" src="images/ithaca_site.jpg" alt="Ithaca Apple Harvest Festival Website Image">
+          </a>
+          <div class="project_description">
+            <p class="project_title">Ithaca Apple Harvest Festival website</p>
+            <p class="date">2017</p>
+          </div>
+        </div>
+        <div id="current_project" class="project">
+          <a href="ithaca_site/index.html" target="_blank">
+            <img class="website_project" src="images/current_project.png" alt="noelpicinich.com Image">
+          </a>
+          <div class="project_description">
+            <p class="project_title">Coup Web App (current project)</p>
+            <p class="date">2017</p>
+          </div>
+        </div>
+      </div>
+      <div class="auv_column">
+        <a target="_blank" href="docs/auv1.pdf" download>
+          <div id="auv1" class="auv_project">
+            <img class="auv_project_img" src="images/auv1.png" alt="CUAUV Project Image">
+          </div></a>
+        <a target="_blank" href="docs/auv2.pdf" download>
+          <div id="auv2" class="auv_project">
+            <img class="auv_project_img" src="images/auv2.png" alt="CUAUV Project Image">
+          </div></a>
+        <a target="_blank" href="docs/auv3.pdf" download>
+          <div id="auv3" class="auv_project">
+            <img class="auv_project_img" src="images/auv3.png" alt="CUAUV Project Image">
+          </div></a>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

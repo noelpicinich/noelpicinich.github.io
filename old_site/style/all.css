@@ -1,0 +1,655 @@
+@font-face {
+    font-family: 'Raleway'; /*a name to be used later*/
+    src: url('./fonts/Raleway/Raleway-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Raleway-Bold'; /*a name to be used later*/
+    src: url('./fonts/Raleway/Raleway-SemiBold.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Julius_Sans_One'; /*a name to be used later*/
+    src: url('./fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Lobster'; /*a name to be used later*/
+    src: url('./fonts/Lobster/Lobster-Regular.ttf'); /*URL to font*/
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+html body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.block {
+  display: block;
+  float: left;
+}
+
+.button {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  text-decoration: none;
+  font-family: 'Raleway';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway';
+  margin: 0px;
+}
+
+body {
+  font-family: arial;
+}
+
+nav {
+  width: 100%;
+}
+
+.nav {
+  justify-content: center;
+  list-style: none;
+  padding: 5%;
+}
+
+ul.nav {
+  margin: 0px;
+}
+
+.nav-item {
+  display: block;
+  float: left;
+}
+
+.nav-link {
+  margin: 10px;
+  font-family: 'Raleway';
+}
+
+.nav-link.active, .nav-link:hover {
+  border-bottom: double 10px #ff9a02;
+}
+
+h1.page-title {
+  font-family: 'Raleway-Bold';
+  margin-top: 7%;
+  font-size: 600%;
+  font-weight: lighter;
+  text-align: center;
+  color: #25304f;
+}
+
+section, footer {
+  display: block;
+  padding: 5%;
+  justify-content: center;
+  height: auto;
+}
+
+section div {
+  display: inline-block;
+}
+
+.section-title {
+  padding: 20px;
+  font-size: 400%;
+  font-weight: lighter;
+  text-align: center;
+  font-family: 'Lobster';
+  color: #25304f;
+}
+
+/* Home Page Style */
+
+#slogan {
+  padding: 15px;
+  color: #919dbf;
+  font-size: 40px;
+  font-family: 'Julius_Sans_One';
+  text-align: center;
+}
+
+/* Home Page Style: Education Section */
+
+#education {
+  display: flex;
+}
+
+#education img{
+  width: 75%;
+}
+
+#education h2 {
+  margin-top: 10px;
+}
+
+#education h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+
+#education a {
+  margin-top: 10px;
+  display: block;
+  background-color: #d6dff9;
+}
+
+#education a:hover {
+  background-color: #b8c1db;
+}
+
+/* Home Page Style: Experience Section */
+
+ul#experience {
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.experience-item {
+  margin: 1%;
+  padding: 15px;
+  display: block;
+  float: left;
+  width: 300px;
+  text-align: center;
+}
+
+.experience-item .border {
+  padding: 15px;
+  height: 280px;
+  border-width: 7px;
+  background-color: white;
+}
+
+.experience-item .border-top {
+  height: 200px;
+}
+
+section#experience-section {
+  background-color: #25304f;
+}
+
+#experience-section h1 {
+  color: #e0eaff;
+}
+
+#experience .w-150 {
+  height: 125px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+#experience h2, #experience h3 {
+  font-weight: lighter;
+}
+
+#experience a {
+  margin-top: 20px;
+  display: block;
+  background-color: #d6dff9;
+}
+
+#experience a:hover {
+  background-color: #b8c1db;
+}
+
+/* Home Page Style: Campus Section */
+
+ul#campus {
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.campus-item {
+  margin: 1%;
+  padding: 15px;
+  display: block;
+  float: left;
+  width: 40%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.campus-item img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+#campus h2, #campus h3 {
+  font-weight: lighter;
+  padding-bottom: 5px;
+}
+
+#campus a {
+  margin-top: 10px;
+  display: block;
+  color: #86a9ef;
+  font-size: 20px;
+}
+
+#campus a:hover {
+  color: #003399;
+}
+
+#campus #scioly {
+  padding-bottom: 11px;
+}
+
+.line-divider {
+  border-style: solid;
+  border-color: #ff9a02;
+  border-bottom: 0px;
+  border-width: 5px;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+/* Home Page Style: Memberships Section */
+
+#memberships {
+  display: flex;
+  justify-content: center;
+}
+
+#memberships a {
+  margin: 5%;
+}
+
+#memberships img {
+  max-height: 150px;
+  max-width: 200px;
+}
+
+#memberships #swe {
+  padding-top: 30px;
+}
+
+/* Footer Style */
+
+footer {
+  background-color: #e8ebf2;
+}
+
+footer #top-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer #email {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: lighter;
+  font-family: monospace;
+  font-size: 150%;
+  color: #667293;
+}
+
+footer #email:hover {
+  color: #25304f;
+}
+
+footer img {
+  display: block;
+  float: left;
+  height: 30px;
+}
+
+footer div {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+footer a.media {
+  padding: 15px;
+}
+
+footer nav ul {
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+footer nav .nav-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+footer nav .footer-nav-link {
+  font-family: 'Raleway';
+  text-decoration: none;
+  color: #667293;
+}
+
+footer nav .footer-nav-link:hover {
+  color: #25304f;
+}
+
+footer #facebook:hover {
+  content: url('../images/facebookDark.png');
+}
+
+footer #linkedin:hover {
+  content: url('../images/linkedinDark.png');
+}
+
+footer #bitbucket:hover {
+  content: url('../images/bitbucketDark.png');
+}
+
+footer #top-img:hover {
+  content: url('../images/top2.png');
+}
+
+/* About Page Style: About Section */
+
+#about {
+  display: flex;
+  justify-content: center;
+}
+
+#about div#about-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+#about img, #about div {
+  margin: auto;
+  padding: 30px;
+  max-width: 80%;
+}
+
+#about img {
+  width: 250px;
+  border-radius: 50%;
+}
+#about div#about-wrapper div p {
+  padding: 20px;
+  background-color: #d6dff9;
+}
+
+#home {
+  font-size: 200%;
+}
+
+#about p {
+  font-family: 'Raleway';
+  font-size: 150%;
+}
+
+/* About Page Style: Sponser Section */
+
+#sponsers h1 {
+  margin-bottom: 50px;
+}
+
+.sponsers-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#sponsers img {
+  display: block;
+  float: left;
+  width: 300px;
+}
+
+#sponsers a {
+  margin: 3%;
+}
+
+/* Project Page */
+
+#silver, #nmb, #auv, #itwomen, #scioly {
+  /*margin-top: 10%;
+  margin-left: 25%;
+  margin-right: 25%;*/
+  min-width: 630px;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container-col {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.project {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+}
+
+.project-item {
+  display: flex;
+  float: left;
+}
+
+.project-item img {
+  display: block;
+  float: left;
+  margin-right: 40px;
+  max-height: 130px;
+  width: auto;
+}
+
+.project-item div {
+  margin-top: 30px;
+}
+
+.project-item p {
+  display: block;
+  float: left;
+}
+
+.project-item ul {
+  list-style: none;
+  padding-left: 0px;
+  display: block;
+  float: left;
+}
+
+.project-item li {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 10px;
+  font-family: 'Raleway';
+}
+
+.project-item ul.list-2 {
+  padding-left: 20px;
+  max-width: 500px;
+}
+
+.project-item ul.list-1 {
+  padding: 20px;
+  background-color: #d6dff9;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #003399;
+}
+
+.project-link:hover {
+  color: #86a9ef;
+}
+.project-item ul.list-2 li a {
+  text-decoration: none;
+}
+
+#silver {
+  margin-top: 40px;
+}
+
+#auv div div img {
+  margin-top: 30px;
+  height: 75px;
+  width: auto;
+}
+
+#itwomen div div img {
+  margin-top: 20px;
+  height: 100px;
+  width: auto;
+}
+
+#scioly div div img {
+  margin-top: 10px;
+}
+
+/* Contact Page */
+
+#contact-subtitle {
+  padding: 15px;
+  color: #919dbf;
+  font-size: 30px;
+  font-family: 'Julius_Sans_One';
+  text-align: center;
+}
+
+#contact-media {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-media a {
+  margin: 5%;
+}
+
+#contact-media img {
+  max-height: 100px;
+  max-width: 150px;
+}
+
+#form-wrapper, #submission-message-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0px;
+}
+
+#form-wrapper form, #submission-message-wrapper h3 {
+  padding: 5%;
+  font-family: 'Raleway';
+  font-size: 20px;
+  color: #25304f;
+  display: block;
+  width: 50%;
+  border: double 10px #ff9a02;
+}
+
+#form-wrapper form div {
+  width: 100%;
+  margin-bottom: 4%;
+  display: flex;
+}
+
+#form-wrapper form div.name {
+  width: 47.5%;
+}
+
+#form-wrapper form div#name-row {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+#form-wrapper form div#last-name {
+  margin-left: 5%;
+}
+
+#form-wrapper form div label {
+  margin: auto;
+  width: 25%;
+}
+
+#form-wrapper form div.button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+#form-wrapper form button {
+  background-color: #d7dff7;
+  font-family: 'Raleway';
+  font-size: 20px;
+  color: #25304f;
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-self: center;
+}
+
+#form-wrapper form div input, #form-wrapper form div textarea {
+  padding: 3px;
+  padding-left: 2%;
+  padding-right: 2%;
+  border: solid #919dbf 2px;
+  height: 30px;
+  width: 75%;
+  font-family: 'Raleway';
+  font-size: 15px;
+  color: #25304f;
+}
+
+#form-wrapper form div textarea {
+  padding-top: 5px;
+  height: 100px;
+}
+
+#submission-message-wrapper h3 {
+  text-align: center;
+}
+
+
+/* Courses Page */
+
+#courses a {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  display: inline-block;
+  background-color: #d6dff9;
+}
+
+#courses a:hover {
+  background-color: #b8c1db;
+}
+
+#courses div div {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#courses div {
+  display: flex;
+  justify-content: center;
+}

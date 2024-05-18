@@ -1,0 +1,168 @@
+@media only screen and (max-width: 749px) {
+  html {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+
+  body {
+    margin: 0px;
+    width: 100%;
+    font-size: 15px;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+  /* Mobile Header Formatting */
+  header {
+    height: auto;
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  header img {
+    display: block;
+    margin: auto;
+    width: 200px;
+  }
+
+  nav ul li a.nav-link {
+    font-size: 20px;
+  }
+
+  nav ul li {
+    margin: 10px;
+  }
+
+  nav #volunteer, #map {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+
+  /* Mobile Index Page Style */
+
+  .details-sidebar-wrapper {
+    margin: 10%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .details-main, .details {
+    margin: 0px;
+    margin-top: 5%;
+    padding: 15px;
+    border-radius: 0px;
+  }
+
+  .details-main h1, .details h1, .details-main h3 {
+    text-align: center;
+  }
+
+  .details-sidebar h1.heading-text, .details-main h3, .details h2 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .details h3 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .details h4, .details-main h4 {
+    font-size: 20px;
+  }
+
+  #icon_wrapper {
+    display: flex;
+    margin-top: 25px;
+  }
+
+  #icon_wrapper img {
+    width: 75px;
+  }
+
+  #icon_wrapper .icon {
+    flex: 1;
+    text-align: center;
+  }
+
+  #festival1, .details-main .festival_img img, .family_fun_img img, #festival_images img, #map_img, .image {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    justify-content: center;
+    width: 290px;
+  }
+
+  #festival1 {
+    margin-bottom: 20px;
+  }
+
+  .application {
+    display: flex;
+    align-self: center;
+  }
+
+  .application img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+  }
+
+  .application h3 {
+    margin: auto;
+    display: block;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+
+  .application a {
+    display: block;
+    margin: auto;
+  }
+
+  .application a h4 {
+    margin: auto;
+    padding: 0px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 5px;
+    display: block;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+
+  .application a h4:hover {
+    background-color: #FF9800
+  }
+
+  #contact_info, #address_info {
+    text-align: center;
+  }
+
+  #address_info {
+    padding-bottom: 5%;
+  }
+
+  iframe {
+    visibility: hidden;
+  }
+
+  footer {
+    margin: 0px;
+    padding: 10px;
+  }
+
+}
